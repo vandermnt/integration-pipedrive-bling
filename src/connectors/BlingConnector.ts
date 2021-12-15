@@ -11,7 +11,7 @@ export class BlingConnector {
       try {
         await axios(requestOptions);
       } catch (error) {
-        throw new Error("dopwakdpowakdkawo");
+        throw error
       }
     }
   }
