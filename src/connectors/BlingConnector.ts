@@ -17,7 +17,7 @@ export class BlingConnector {
   private mountPostRequest(order: any): AxiosRequestConfig {
     return {
       method: "post",
-      url: `${process.env.BLING_URL_API}`,
+      url: process.env.BLING_URL_API,
       params: {
         apikey: process.env.API_KEY,
         xml: order,
