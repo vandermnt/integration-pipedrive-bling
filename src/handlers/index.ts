@@ -1,3 +1,3 @@
-export * from "./PipeDrive";
+export * from "./Pipedrive";
 export * from "./Bling";
-export * from "./IOrderBehaviour";
+export * from "./Opportunities";

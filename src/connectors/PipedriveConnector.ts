@@ -1,15 +1,16 @@
 import "dotenv/config";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
+import { OpportunitiesFromPipedrive } from "../model";
 
-export class PipeDriveConnector {
-  public async getBusssines() {
+export class PipedriveConnector {
+  public async getBussines(): Promise<OpportunitiesFromPipedrive[]> {
     const requestOptions = this.mountRequestGetDeals();
 
     try {
       const response: AxiosResponse = await axios(requestOptions);
 
       return response.data;
-    } catch (error) {
+    } catch (error: any) {
       throw error;
     }
   }

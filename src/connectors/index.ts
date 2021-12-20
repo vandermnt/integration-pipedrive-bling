@@ -1,2 +1,2 @@
-export * from "./PipeDriverConnector";
+export * from "./PipedriveConnector";
 export * from "./BlingConnector";

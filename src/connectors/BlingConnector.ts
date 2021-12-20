@@ -2,8 +2,6 @@ import "dotenv/config";
 import axios, { AxiosRequestConfig } from "axios";
 
 export class BlingConnector {
-  constructor() {}
-
   public async createOrder(orders: any): Promise<void> {
     for (const index in orders) {
       const requestOptions = this.mountPostRequest(orders[index]);
@@ -11,7 +9,7 @@ export class BlingConnector {
       try {
         await axios(requestOptions);
       } catch (error) {
-        throw new Error("dopwakdpowakdkawo");
+        throw error;
       }
     }
   }
