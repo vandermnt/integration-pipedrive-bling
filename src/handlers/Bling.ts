@@ -16,7 +16,6 @@ export class Bling {
       );
 
       if (existsOpportunities) {
-        console.log(`Oportunidade existente ${existsOpportunities}`);
         const newTotal = existsOpportunities.totalValue + order.weighted_value;
         await this.opportunitieRepository.update(
           existsOpportunities._id,
