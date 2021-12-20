@@ -39,7 +39,7 @@ docker build -t <NOME-DA-IMAGEM> .
 docker-compose up -d
 ~~~
 
-<p>🔹Após executados os comandos acima, execute o comando abaixo para verificar se os dois containers aplicação e banco de dados estão ok:</p>
+<p>🔹Após executados os comandos acima, execute o comando abaixo para verificar se os dois containers (aplicação e banco de dados) estão ok:</p>
 
 ~~~html
 docker container ps
@@ -52,6 +52,3 @@ docker container ps
 🎬 Overview do projeto:
 
 https://user-images.githubusercontent.com/43019713/146765486-decbe891-7504-4dba-823c-904b1bd72e5c.mp4
-
-
-
